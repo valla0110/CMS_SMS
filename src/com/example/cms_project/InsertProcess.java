@@ -65,16 +65,16 @@ public class InsertProcess extends SQLiteOpenHelper
             }
         } catch (Exception e) {
 
-            Toast.makeText(context, "Exception: " + e, Toast.LENGTH_LONG).show();
+           // Toast.makeText(context, "Exception: " + e, Toast.LENGTH_LONG).show();
         }
     }
  void insert(String key, String body) {
-        Toast.makeText(context, "insert called", Toast.LENGTH_LONG).show();
+       // Toast.makeText(context, "insert called", Toast.LENGTH_LONG).show();
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues con = new ContentValues();
         con.put(key, body);
         long id = db.insert(InsertProcess.table_name, null, con);
-        Toast.makeText(context, "insert successful", Toast.LENGTH_LONG).show();
+        //Toast.makeText(context, "insert successful", Toast.LENGTH_LONG).show();
     }
 	@Override
 	public void onCreate(SQLiteDatabase arg0) {

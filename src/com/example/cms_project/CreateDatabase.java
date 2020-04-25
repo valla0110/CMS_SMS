@@ -40,10 +40,10 @@ public class CreateDatabase extends SQLiteOpenHelper
 
         try {
             db.execSQL(CREATE);
-            Toast.makeText(context, "table created", Toast.LENGTH_LONG).show();
+            //Toast.makeText(context, "table created", Toast.LENGTH_LONG).show();
 
         } catch (SQLException e) {
-            Toast.makeText(context, "" + e, Toast.LENGTH_LONG).show();
+           // Toast.makeText(context, "" + e, Toast.LENGTH_LONG).show();
             System.out.println(e);
         }
 		
@@ -51,7 +51,7 @@ public class CreateDatabase extends SQLiteOpenHelper
 
 	 void index1() {
 
-	        Toast.makeText(context, "index called", Toast.LENGTH_LONG).show();
+	       // Toast.makeText(context, "index called", Toast.LENGTH_LONG).show();
 	        SQLiteDatabase db = this.getWritableDatabase();
 	        for (int i = 0; i < indexa.length; i++) {
 	            String index = " CREATE INDEX " + indexa[i] + " on " + table_name + "(" + indexa[i] + ") ";
@@ -59,7 +59,7 @@ public class CreateDatabase extends SQLiteOpenHelper
 	                db.execSQL(index);
 	                Toast.makeText(context, "index added", Toast.LENGTH_LONG).show();
 	            } catch (SQLException e) {
-	                Toast.makeText(context, "" + e, Toast.LENGTH_LONG).show();
+	               // Toast.makeText(context, "" + e, Toast.LENGTH_LONG).show();
 	                System.out.println(e);
 	            }
 	        }

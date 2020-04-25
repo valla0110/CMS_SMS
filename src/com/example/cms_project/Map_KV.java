@@ -2,12 +2,15 @@ package com.example.cms_project;
 
 import java.util.*;
 
+import android.content.Context;
+import android.widget.Toast;
+
 
 public class Map_KV 
 {
 	HashMap<String,ArrayList<String>> KV()
 	    {
-	       // Map<String,ArrayList<String>> m=new HashMap<String, ArrayList<String>>();
+		
 		 HashMap<String, ArrayList<String>> m = new HashMap<String,ArrayList<String>>();
 	        ArrayList<String> education=new ArrayList<String>();
 	        education.add("exam");
@@ -15,10 +18,13 @@ public class Map_KV
 	        education.add("student");
 	        education.add("semester");
 	        education.add("education");
+	        education.add("career");
+	        education.add("test");
 	        ArrayList<String> meeting=new ArrayList<String>();
 	        meeting.add("seminar");
 	        meeting.add("conference");
 	        meeting.add("meeting");
+	        meeting.add("work");
 	        ArrayList<String> sports=new ArrayList<String>();
 	        sports.add("games");
 	        sports.add("play");
@@ -29,6 +35,7 @@ public class Map_KV
 	        bank.add("deposited");
 	        bank.add("account");
 	        bank.add("bank");
+	        bank.add("salary");
 	        ArrayList<String> entertainment=new ArrayList<String>();
 	        entertainment.add("music");
 	        entertainment.add("dance");

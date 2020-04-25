@@ -36,13 +36,15 @@ public class MainActivity extends Activity
         {
         	 public void run(){
         		  try{
-        			  sleep(5000);
+        			  
+        			 
+        			  sleep(15000);
         			  
         		  }catch(Exception e){
         			   e.printStackTrace();
         		  }
         	      finally{
-        	    	   Intent openstartingpoint = new Intent("com.example.cms_project.SEARCH");
+        	    	  Intent openstartingpoint = new Intent("com.example.cms_project.SEARCH");
         	    	   startActivity(openstartingpoint);
         	      }
         	 }
@@ -75,7 +77,9 @@ public class MainActivity extends Activity
         	p.edit().putBoolean("PREFERENCE_FIRST_RUN", false).commit();
         	
         }
+       
     }
+   
       /* fr=new FirstRun(getBaseContext());
        try
        {
@@ -86,10 +90,6 @@ public class MainActivity extends Activity
     	   Toast.makeText(this, "first  "+ex,Toast.LENGTH_LONG).show();
        }*/
        
-       
-
-   
-
    
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
